@@ -1,23 +1,73 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <html lang="en">
-    <title>Nothing</title>
+    <title>Oops... Nothing here!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        nav {
+            padding: 20px 0;
+        }
+
+        .footer {
+            background-color: #0d1418;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer a {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #1a91da;
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Welcome to Nothing Linux!</h1>
-    <p>We'll continue working on this webside soon!</p>
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-    </ul>
+    <div class="footer">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Welcome to Nothing Linux!</h1>
+        <p>Linux is a free and open-source operating system that is widely used in servers, supercomputers, and mobile devices. It was first released in 1991 by Linus Torvalds and has since become one of the most popular operating systems in the world.</p>
+    </main>
+    <footer>
+        <p>Nothing's Social Media:</p>
+        <a href="https://twitter.com/nothing/">Nothing Twitter</a>
         <br>
-    <br>
-    <a href="https://example.com">Test link.</a>
-
+        <a href="https://discord.gg/fJ273CaTjR">Nothing Discord</a>
+    </footer>
 </body>
-
 </html>
