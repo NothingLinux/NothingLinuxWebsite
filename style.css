@@ -1,54 +1,60 @@
 * {
-    border-radius: 10px;
-  }
-  
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('snowing.jpg');
-    background-size: cover;
-    color: #fff;
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: center;
-  }
-  
-  nav {
-    text-align: center;
-  }
-  
-  nav ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  a {
-    color: #1da1f2;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #1a91da;
-    text-decoration: underline;
-  }
-  footer {
-    background-color: #0d1418;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer a {
-    color: #1da1f2;
-  }
-  
-  footer a:hover {
-    color: #1a91da;
-    text-decoration: underline;
-  }
+  border-radius: 10px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url('background.png');
+  background-size: cover;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+
+.button:hover {
+  background-color: #0e8bbf;
+}
+
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1a91da;
+  text-decoration: underline;
+}
+footer {
+  background-color: #0d1418;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+footer a {
+  color: #1da1f2;
+}
+
+footer a:hover {
+  color: #1a91da;
+  text-decoration: underline;
+}

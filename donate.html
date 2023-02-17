@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Donate | Nothing Linux</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        nav {
+            padding: 20px 0;
+        }
+
+        .footer {
+            background-color: #0d1418;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer a {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #1a91da;
+            text-decoration: underline;
+        }
+
+        label[for=crypto] {
+            color: #b98411;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <h1>Donate us!</h1>
+            <h3>We're a non-profit community project and you know, we put a lot of time and effort into this project, so we would love to sometimes get some money for our work :)</h3>
+            <br>
+            <br>
+            <form id="donation-form">
+                <h2><label for="crypto">Select Cryptocurrency:</label></h2>
+                <select id="crypto" name="crypto" required>
+                    <option value="btc">Bitcoin</option>
+                    <option value="eth">Ethereum</option>
+                    <option value="teh">Tether</option>
+                    <option value="doge">Doge</option>
+                    <option value="sol">Solana</option>
+                    <option value="xmr">Monero</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Get Wallet Adress">
+            </form>
+            <br>
+            <br>
+            <div id="wallet-address" style="display:none;">
+                <h3><p>Send your donation to the following wallet address:</p></h3>
+                <h2><p id="address"></p></h2>
+            </div>
+        </main>
+        <footer>
+            <p>Nothing's Social Media:</p>
+            <a href="https://twitter.com/nothinglinux/">Nothing Twitter</a>
+            <br>
+            <br>
+            <a href="https://discord.gg/fJ273CaTjR">Nothing Discord</a>
+            <br>
+            <br>
+            <p>&copy; 2023 Nothing Linux</p>
+        </footer>
+        <script>
+            const donationForm = document.getElementById("donation-form");
+            const walletAddressDiv = document.getElementById("wallet-address");
+            const addressParagraph = document.getElementById("address");
+            donationForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const selectedCrypto = donationForm.crypto.value;
+                let address = "";
+                switch (selectedCrypto) {
+                    case "btc":
+                        address = "1PjURC2bW9xu6JwUq7KSrjSKLXE9N8Kqnd";
+                        break;
+                    case "eth":
+                        address = "0x672c719d71048d9Ad294C92be938253b515CE0f2";
+                        break;
+case "teh":
+address = "0x672c719d71048d9Ad294C92be938253b515CE0f2";
+break;
+case "doge":
+address = "D9qLfzNGJWZeLYyiFVQ4bzCfAv1vvgAhrU";
+break;
+case "sol":
+address = "CrWLVk1FTYQQj7cNYazirGZZTqzznqnaYZX6zNzn6Lp4";
+break;
+case "xmr":
+address = "47b4oqb9JAENFb8vq8rR9vJ9AuyjEb3NmAiGHuTsibHHaUoovDxBj89ZRHdoSpVwrSGnYRMXgQR26T95gtnAcBeuBPmNxik";
+break;
+}
+addressParagraph.textContent = address;
+walletAddressDiv.style.display = "block";
+});
+</script>
+</body>
+
+</html>
